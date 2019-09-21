@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- For sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Free classified in Pakistan, classified ads in Paksitan (For Sale in Pakistan, Vehicles in Pakistan,Real Estate in Pakistan,Community
+    in Pakistan,...) </title>
+  <link rel="icon" href="images/fb-image200x200.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCJHMM6BLK1ImJxjQuNutDAlucRQfwSZdQ",
+      authDomain: "marketing-app-cd42a.firebaseapp.com",
+      databaseURL: "https://marketing-app-cd42a.firebaseio.com",
+      projectId: "marketing-app-cd42a",
+      storageBucket: "marketing-app-cd42a.appspot.com",
+      messagingSenderId: "844754277837"
+    };
+    firebase.initializeApp(config);
+  
+var loginUser=localStorage.getItem('currentUserUid');
+
+    // getting messaging Object from firebase
+const messaging = firebase.messaging();
+
+messaging.requestPermission().then(function () {
+    console.log('Notification permission granted.');
+    return messaging.getToken();
+}).then(function (token) {
+    // Displaying user token
+    console.log('token >>>> ', token);
+    db.ref(`/marketing-app-cd42a/users/${loginUser}/token/`).set(token);
+}).catch(function (err) { // Happen if user deney permission
+    console.log('Unable to get permission to notify.', err);
+});
+  </script>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css">  -->
+
+  <!-- <img src = "fb-image200x200.png" alt ="olx karachi" height ="150px" width="150px"> -->
+</head>
+
+<body onload="fetchData()">
+  <div>
+    <a href="index.html">
+      <img src="images/fb-image200x200.png" alt="olx karachi" height="100px" width="100px">
+    </a>
+    <span>
+      <b>Pakistan's Largest Marketplace</b>
+    </span>
+    <!-- <button class="my account">
+    <a href="index.html"> -->
+
+    <button class="my account" onClick="account()">
+      <b> Account</b></button>
+    <!-- <a href="index.html"> -->
+    <button class="submit" onClick="create()">
+     <b> Submit An Ad </b></button>
+     <!-- <button class="logout" onClick="signOut()">
+      <b> Logout </b></button> -->
+  </div>
+  <!-- navigation bar -->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="favadd.html">Favourite Ads</a>
+    <!-- <a href="#contact">Contact</a> -->
+    <!-- <div class="search-container">
+      <! <form> -->
+        <!-- <form>
+      <input type="text">
+      <button onClick="searchData()" >Search</button> -->
+               <!-- <button  onClick="searchData()"class="btn btn-primary" > -->
+<!-- The form -->
+<!-- <form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button   onClick="searchData()"><i class="fa fa-search"></i></button>
+</form> --> 
+<!-- 
+<div class="col-xs-6" >
+  <div class="right-inner-addon">
+    <i class="icon-search"></i>
+    <input type="search" class="form-control" placeholder="Search" />
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button onClick="searchData()" class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
+        </span>
+  </div>
+  </div>
+             <!-- <span class="glyphicon glyphicon-search"></span>
+            <button type="submit"><i class="fa fa-search"></i></button>  
+           -->
+     <!-- </button> -->
+     
+      <!-- </form> -->
+    </div>
+  </div>
+
+
+  <div id="printdata" class="card-container">
+  </div>
+  <div id="printSearchData"></div>
+
+
+
+
+  <!-- foooter -->
+
+
+  <footer>
+    <table>
+      <tr>
+        <td width="20%" style="vertical-align: top;">
+          <img class="icon" src="images/fb-image200x200.png" height ="100vw" width="100vw" />
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <a href="#">Location Map</a>
+                <br>
+                <a href="#">Popular Search</a>
+                <br>
+                <a href="#">Archive</a>
+                <br>
+                <a href="#">Sitemap</a>
+              </td>
+              <td>
+                <a href="#">Location Map</a>
+                <br>
+                <a href="#">Popular Search</a>
+              </td>
+              <td>
+                <a href="#">Location Map</a>
+                <br>
+                <a href="#">Popular Search</a>
+                <br>
+                <a href="#">Archive</a>
+              </td>
+              <td id="cont-us">
+                <span>Contact Us</span>
+                <p/> &nbsp; &nbsp;
+                <a href="#">Location Map</a>
+                <br> &nbsp; &nbsp;
+                <a href="#">Popular Search</a>
+                <br> &nbsp; &nbsp;
+                <a href="#">Archive</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <br>
+      <div id="footer" class = "footer-copyright text-center py-3"><b>Made by: </b>
+        
+      <a href="https://www.facebook.com/mustafa.ilahi.1" >Mustafa ILahi</a>
+      
+    </div>
+        <div id="error">
+
+      </div>
+    </table>
+  </footer>
+
+
+
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

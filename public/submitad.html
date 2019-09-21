@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Free classified in Pakistan, classified ads in Paksitan (For Sale in Pakistan, Vehicles in Pakistan,Real Estate in Pakistan,Community
+        in Pakistan,...) </title>
+    <link rel="icon" href="images/fb-image200x200.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCJHMM6BLK1ImJxjQuNutDAlucRQfwSZdQ",
+            authDomain: "marketing-app-cd42a.firebaseapp.com",
+            databaseURL: "https://marketing-app-cd42a.firebaseio.com",
+            projectId: "marketing-app-cd42a",
+            storageBucket: "marketing-app-cd42a.appspot.com",
+            messagingSenderId: "844754277837"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <body>
+        <a href="index.html">
+            <img src="images/fb-image200x200.png" alt="olx karachi" height="100px" width="100px">
+        </a>
+        <span>
+            <b>Pakistan's Largest Marketplace</b>
+        </span>
+        <br>
+        <div class="container">
+            <h1><b>Submit an Ad</b></h1>
+            <br>
+            <label for="Ad Title">
+                <b>Ad Title*</b>
+            </label>
+            <br>
+            <input id="adtitle" type="text" placeholder="Ad title" name="adtitle">
+
+            <div class="category">
+                <label for="category">
+                    <br>
+                    <b>Category:</b>
+                    <select id="category">
+                        <option value="select">Select</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="Electronics & Home Appliances">Electronics & Home Appliances</option>
+                        <option value="Vehicles">Vehicles</option>
+                        <option value="Bikes">Bikes</option>
+                        <option value="Property for Sale">Property for Sale</option>
+                        <option value="Property for Rent">Property for Rent</option>
+                        <option value="Jobs">Jobs</option>
+                        <option value="Services">Services</option>
+                        <option value="Business Industrial & Agriculture">Business Industrial & Agriculture</option>
+                        <option value="Future & Home Decor">Future & Home Decor</option>
+                        <option value="Animals">Animals</option>
+                        <option value="Books Sports & Hobbies">Books Sports & Hobbies</option>
+                        <option value="Fashion & Beauty">Fashion & Beauty</option>
+                        <option value="Kids">Kids</option>
+                    </select>
+            </div>
+
+            <div class="description">
+                <label for="description">
+                    <br>
+                    <b>Ad Description:</b>
+                    <br>
+                    <textarea name="description" id="description"></textarea>
+            </div>
+            <br>
+            <div class="Upload Photos">
+                <!-- <label for="img" Upload Photos> -->
+                    <b>Upload Photos:</b>
+                    <br>
+                    <span class="btn btn-default btn-file">
+                        <input type="file" id="img">
+                    </span>
+            </div>
+            <br>
+            <div>
+                <label for="Name">
+                    <b>Name:</b>
+                    <br>
+                </label>
+                <input id="name" type="text" placeholder="Enter Name" name="Name" required>
+            </div>
+            <div>
+                <br>
+                <label for="phone:">
+                    <b>Phone Number:</b>
+                    <br>
+                </label>
+                <input id="phone" type="text" placeholder="Enter Phone Number:" name="Phone Number:" required>
+            </div>
+            <br>
+            <div>
+                <label for="Province">
+                    <b>Province:</b>
+                   
+                    <select id="province" required>
+                        <!-- <input id="Province" type="text" placeholder="Enter Province" name="Province" required> -->
+                        <option value="select">Choose Province</option>
+                        <option value="Azad Kashmir">Azad Kashmir</option>
+                        <option value="Balochistan">Balochistan</option>
+                        <option value="Federally Administed Tribal
+                        Areas">Federally Administed Tribal Areas
+                        </option>
+                        <option value="Islamabad Capital Territory">Islamabad Capital Territory</option>
+                        <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                        <option value="Northern Areas">Northern Areas</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Sindh">Sindh</option>
+                    </select>
+                </label>
+
+            </div>
+            <br>
+            <div>
+                <label for="city">
+                    <b>City:</b>
+                    <br>
+                </label>
+                <input id="city" type="text" placeholder="Enter City" name="City" required>
+            </div>
+            <br>
+            <div>
+                    <label for="model">
+                        <b>Model:</b>
+                    
+                    </label>
+                    
+                    <input id="model" type="text" placeholder="Enter model" name="model" required>
+               
+                <br>
+            
+                <label for="brand">
+                    <br>
+                        <b>Brand:</b>
+                        <br>
+                    </label>
+                    <br>
+                    <input id="brand" type="text" placeholder="Enter brand" name="brand" required>
+                    <br>
+                
+                <label for="year">
+                    <br>
+                        <b>Year:</b>
+                        <br>
+                      
+                    </label>
+                    <br>
+                    <input id="year" type="number" placeholder="Enter year" name="year" required>
+                    <br>
+               <br>
+           
+                <label for="price">
+                        <b>Price:</b>
+                        
+                        <br>
+                    </label>
+                <br>
+                    <input id="price" type="number" placeholder="Enter price" name="price" required>
+                    <br>
+                
+                
+            <!-- <p>
+        By clicking 'Submit' you confirm that you have carefully read and understood all the facts, statements and conditions stated in the Terms of Use & Posting Rules of our website to which you unconditionally agree and accept
+         as true and correct and constituting a binding agreement between us.</p> -->
+            <div>
+                <!-- <input  onClick="submitad()"type="submit" class="cfff" value="Submit" id="save"> -->
+                <button onclick="submitad()" class="sb-btn">
+                   <b> Submit An Ad</b></button> <br>
+                    <br>
+                <!-- <input type="submit" class="btn btn-info" value="Submit"> -->
+
+            </div>
+        </div>
+    <!-- </div> -->
+ <!-- foooter -->
+
+
+ <footer class="foot">
+    <table>
+      <tr>
+        <td width="20%" style="vertical-align: top;">
+          <img class="icon" src="images/fb-image200x200.png" height ="100vw" width="100vw" />
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <a href="#">Location Map</a>
+                <br>
+                <a href="#">Popular Search</a>
+                <br>
+                <a href="#">Archive</a>
+                <br>
+                <a href="#">Sitemap</a>
+              </td>
+              <td>
+                <a href="#">Location Map</a>
+                <br>
+                <a href="#">Popular Search</a>
+              </td>
+              <td>
+                <a href="#">Location Map</a>
+                <br>
+                <a href="#">Popular Search</a>
+                <br>
+                <a href="#">Archive</a>
+              </td>
+              <td id="cont-us">
+                <span>Contact Us</span>
+                <p/> &nbsp; &nbsp;
+                <a href="#">Location Map</a>
+                <br> &nbsp; &nbsp;
+                <a href="#">Popular Search</a>
+                <br> &nbsp; &nbsp;
+                <a href="#">Archive</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <br>
+      <div id="footer" class = "footer-copyright text-center py-3"><b>Made by: </b>
+      
+      <a href="https://www.facebook.com/mustafa.ilahi.1">Mustafa ILahi</a>
+    </div>
+        <div id="error">
+
+
+    </table>
+  </footer>
+
+
+
+
+
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

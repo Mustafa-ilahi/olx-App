@@ -1,0 +1,482 @@
+@media only screen and (max-width: 600px) {
+body{
+  background-color: white;
+}
+  }
+/* signup */
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #343F64;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+/* .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+} */
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+.container input{
+   padding-left : -14px; 
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(28, 214, 214);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+/* 
+/* Bordered form */
+form {
+  border: 3px solid rgb(241, 241, 241);
+
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 63%;
+  padding: 12px 20px;
+     margin: -8px 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+
+}
+
+.container input,label{
+  margin-left: 132px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: rgba(255, 117, 4, 0.945);
+    color: black;
+    height: 34px;
+    width: 131px;
+    font-size: 15px;
+    position: relative;
+    left: 404px;
+    border-radius: 13px;
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+/* .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+} */
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+/* img.olx {
+  width: 10;
+  height: 10;
+  border-radius: 50%;
+} */
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+      display: block;
+      float: none;
+  }
+  .cancelbtn {
+      width: 100%;
+  }
+}
+#M{
+float: right;
+}
+h1{
+  display: inline-block;
+ position: relative;
+size:2em;
+} */
+ .account{
+background-color: orangered;
+color: white;
+height:40px;
+width:150px;
+font-size: 15px;
+left:50px;
+} 
+
+.submit{
+  background-color:rgba(255, 117, 4, 0.945);
+  color:black;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  position: relative;
+  left:50px;
+border-radius:13px;
+font-family: Courier New, Courier, monospace;
+}
+
+.logout{
+  background-color:rgba(255, 209, 4, 0.945);
+  color:black;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  position: relative;
+  left:400px;
+border-radius:13px;
+font-family: Courier New, Courier, monospace;
+}
+
+/* choose files */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.container{
+  /* border: turquoise; */
+/* text-align: center; */
+width: 50%;
+border: 4px solid #343F64;;
+border-radius: 4px;
+/* margin: 0 auto; */
+}
+
+.account{
+  background-color:rgba(13, 168, 189, 0.945);
+  color:black;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  position: relative;
+  left:50px;
+border-radius: 13px;
+font-family: Courier New, Courier, monospace;
+}
+
+
+/* submit add button */
+.sb-btn{
+  background-color:orange;
+  color:black;
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  position: relative;
+ left: 250px;
+}
+/* navigation bar with search bar */
+* {box-sizing: border-box;
+    font-family: Courier New, Courier, monospace;
+
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #343F64;;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+font-family: Courier New, Courier, monospace
+ }
+
+.topnav a:hover {
+  background-color:lightgreen;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: lightgreen;
+  color: black;
+  font-family: Courier New, Courier, monospace;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+     padding: 10px;
+    margin-top: 11px;
+    font-size: 13px;
+  border: none;
+  border-radius:2px;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 7px;
+    margin-top: -27px;
+    margin-right: 16px;
+    background:#343F64;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+
+
+.topnav .search-container button:hover {
+  background:lightgreen;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid rgb(188, 208, 219);  
+  }
+}
+
+
+
+/* for ads */
+
+
+.card-container{
+  width: 100%;
+  margin: 5% auto;
+  text-align: center;
+  /* position: relative; */
+  top: 500px;
+}
+.card{ 
+    width: 302px;
+    height: 275px;
+ border: 1px solid lightgray;
+ display: inline-block;
+ margin: 12px;
+}
+.text{
+ background-color: rgb(20, 131, 70);
+border-radius:13px;
+}
+.text span{
+ font-size: 1.5em;
+ /* font-family: Arial, Helvetica, sans-serif; */
+ line-height: 100px;
+ color: black;
+ /*text-shadow: 2px 2px 4px black;*/
+
+}
+/* .card .img{
+ width: 100%;
+} */
+
+#img-size{
+  width: 150%;
+  height: 200px;
+}
+
+.adTittle{
+  font-size:20px;
+}
+
+.msg{ 
+  /*background-color:rgba(248, 194, 15, 0.945);*/
+  color:black;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  position: relative;
+  left:50px;
+  border-radius: 10px;
+/* display:inline; */
+ font-family: Courier New, Courier, monospace;
+}
+
+.favourite {
+background-color: darkgreen;
+  color:black;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  position: relative; 
+  left:50px;
+  border-radius: 10px;
+  /* text-align:center; */
+  font-family: Courier New, Courier, monospace;
+}
+.btns{
+  padding: 50px;
+}
+
+
+/* foooter css */
+footer{
+  background-color:#343F64;
+  border-top: 200px solid  white;
+  vertical-align: bottom;
+  font: normal normal normal 26px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+}
+footer table{
+  width: 100%;
+  height: 150px;
+  margin: 2%;
+  padding: 20px 10px;
+  vertical-align: top;
+}
+footer table table tr{
+  display: block;
+}
+footer table table tr td{
+  min-width: 15%;
+  max-width: 500px;
+  display: inline-block;
+  vertical-align: top;
+}
+footer table a{
+  text-decoration: none;
+  color: wheat;
+  font-size: 14px;
+}
+footer table a:hover{
+  color: rgb(250, 150, 0);
+}
+footer table table #cont-us span{
+  font-weight: bold;
+  font-size: 18px;
+}
+footer table table #cont-us a{
+  text-decoration: underline;
+  color: wheat;
+}
+
+.footer{
+  text-decoration-color: wheat;
+  position:fixed;
+  top:700px;
+  width: 95%;
+}
+searchText{
+  width: 5%;
+}
+
